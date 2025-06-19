@@ -83,10 +83,7 @@ export default function HotelsList() {
 			) : (
 				hotels.map((hotel: any) => (
 					<HotelCard key={hotel._id}>
-						<HotelImage
-							src={`https://hotel-api-9p5w.onrender.com/${hotel.photo}`}
-							alt={hotel.name}
-						/>
+						<HotelImage src={hotel.photo} alt={hotel.name} />
 						<HotelInfo>
 							<HotelAddress>{hotel.address}</HotelAddress>
 							<HotelName>{hotel.name}</HotelName>
